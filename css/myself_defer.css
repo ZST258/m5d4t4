@@ -1,0 +1,68 @@
+    .slide_up_scroll div p {
+        color: #f6d99d;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    .slide_up_noti_content a {
+        text-align: center;
+    }
+
+    .bottom-p {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .btn-gold{
+        background: #f6d99d;
+        background: -webkit-gradient(linear,left top,right top,from(#e2b271),to(#f6d99d));
+        background: -webkit-linear-gradient(left,#e2b271,#f6d99d);
+        background: -o-linear-gradient(left,#e2b271 0,#f6d99d 100%);
+        color: #5c3301;
+        font-size: 17px;
+        border-radius: 8px;
+        margin: 8px 0;
+    }
+textarea {
+       background-color: dimgrey;
+       border-radius: 6px;
+}
+@media (max-width: 768px) {
+  .instruction-text {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+.comment {
+  display: flex;
+  align-items: stretch; /* 将项垂直对齐并拉伸以填充容器 */
+}
+
+.comment-textbox {
+  flex: 1; /* 将 comment-textbox 变为可伸缩项，以便占据剩余空间 */
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em; /* 增加左边距 */
+  font-size: 1.25em; /* 放大图标 */
+}
+
+.comment-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.25em; /* 增加底部间距 */
+  font-size: 1.6em; /* 放大图标 */
+  color: red;
+}
+.comment-likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

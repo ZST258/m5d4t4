@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh">
+ <head> 
+  <meta charset="utf-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <script src="result.js"></script> 
+  <title>云霄日榜</title> 
+  <link href="https://movie.zst258.top/css/jquery.fancybox.min.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
+  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css" /> 
+  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css" /> 
+  <link href="https://movie.zst258.top/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" /> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/jquery-latest.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/popper.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>
+  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script> 
+  <link rel="icon" href="icon.png" type="image/png">
+ </head> 
+   <style>
+    .main-wrapper {
+         max-width: 90%;
+         margin: 0 auto;
+    }
+    body {
+  		background-image: url("background.jpg");
+  		background-repeat: no-repeat;
+  		background-size: cover;
+		background-attachment: fixed;
+    }
+    h3 {
+       color: black;
+       text-align: center;
+    }
+  </style> 
+ <body data-base-url="https://movie.zst258.top">
+
+  <div class="main-wrapper" id="app"> 
+   <!-- Modal --> 
+   <style>
+    a {
+        text-decoration: none;
+    }
+    .page-content {
+         padding: 0 20px;
+         margin: 0 auto;
+    }
+    .category-page {
+        opacity:0.85;
+	  border-radius: 4px;
+    }
+    .text-center {
+         padding: 0 20px;
+         margin: 0 auto;
+    }
+    .ui.button {
+        cursor: pointer;
+        display: inline-block;
+        min-height: 1em;
+        outline: 0;
+        border: none;
+        vertical-align: baseline;
+        background: #e0e1e2 none;
+        color: rgba(0, 0, 0, .65);
+        font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        margin: 0 0.25em 0 0;
+        padding: 0.78571429em 1.5em 0.78571429em;
+        text-transform: none;
+        text-shadow: none;
+        font-weight: 700;
+        line-height: 1em;
+        font-style: normal;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 0.28571429rem;
+        -webkit-box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+        box-shadow: 0 0 0 1px transparent inset, 0 0 0 0 rgb(34 36 38 / 15%) inset;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-transition: opacity .1s ease, background-color .1s ease, color .1s ease, background .1s ease, -webkit-box-shadow .1s ease;
+        transition: opacity .1s ease, background-color .1s ease, color .1s ease, background .1s ease, -webkit-box-shadow .1s ease;
+        transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease;
+        transition: opacity .1s ease, background-color .1s ease, color .1s ease, box-shadow .1s ease, background .1s ease, -webkit-box-shadow .1s ease;
+        will-change: '';
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    button,
+    input {
+        overflow: visible;
+    }
+
+    .bottom-p {
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    .btn-gold{
+        background: #f6d99d;
+        background: -webkit-gradient(linear,left top,right top,from(#e2b271),to(#f6d99d));
+        background: -webkit-linear-gradient(left,#e2b271,#f6d99d);
+        background: -o-linear-gradient(left,#e2b271 0,#f6d99d 100%);
+        color: #5c3301;
+        font-size: 17px;
+        border-radius: 8px;
+        margin: 8px 0;
+    }
+    .instruction-text{
+        font-size: 1.2rem;
+        color: #fff !important;
+    }
+    .cv-archive {
+        opacity:0.85;
+        background-color:white;
+        margin-top: 15px;
+        margin: 10px auto;
+        border-radius: 12px;
+    }
+    @media screen and (max-width:768px){
+        .slide_up_noti_content{
+            min-width: auto;
+            width: 90%;
+            padding: 20px;
+        }
+        .instruction-text{
+            font-size: 1rem;
+        }
+
+    }
+.search-box {
+  margin-top:25px;
+  border: 2px solid #000;
+  font-weight: bold;
+  padding: 1px;
+}
+</style> 
+   <div class="page-content"> 
+<div class="row">
+  <div class="col-12 py-5 text-white cv-archive mb-3">
+    <h3 class="cvtitle">云霄风云榜</h3>
+    <div class="search-box">
+    <form class="search-form" action="https://movie.zst258.top/search/items" method="GET">
+      <div class="input-group">
+        <input type="text" class="form-control" id="search-input" name="wd" placeholder="输入关键字搜索" value="">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">搜索</button>
+        </div>
+      </div>
+    </form>
+   </div>
+  </div>
+</div> 
+    <div class="col-12"> 
+     <div class="card-deck" id="results"> 
+      <script>
+      // 使用 JavaScript 将数据渲染为 HTML 页面
+      var resultsDiv = document.getElementById("results");
+      for (var i = 0; i < results.length; i++) {
+        var cardDiv = document.createElement("div");
+        cardDiv.className = "category-page video-list-item col-xl-3 col-sm-6 col-12";
+        cardDiv.innerHTML = `
+          <div class="card mx-1 mb-2">
+              <div class="rank-img-wrapper embed-responsive embed-responsive-66">
+                <a href="https://movie.zst258.top/api/view?code=${results[i].code}">
+                <img class="card-img-top embed-responsive-item lazyloaded" src="${results[i].img_url}" data-src="${results[i].img_url}" alt="${results[i].title}">
+                <span class="badge badge-danger badge-rank">${results[i].rank}</span>
+              </div>
+            </a>
+            <div class="card-body">
+                <h5 class="card-title text-dark">${results[i].code}</h5>
+                <a href="https://movie.zst258.top/api/view?code=${results[i].code}">
+                <p class="card-text text-primary">
+                  ${results[i].title}</p>
+                <span class="text-muted">${results[i].date}</span>
+                <div class="video-list-item-tag-wrapper">
+                  <span class="badge bg-dark text-white">${results[i].score}</span>
+                  <span class="badge bg-primary text-white" onclick="copyToClipboard('${results[i].magnet}')">BT链接</span>
+                </div>
+              </a>
+            </div>
+          </div>`;
+        resultsDiv.appendChild(cardDiv);
+      }
+    </script> 
+     </div> 
+    </div> 
+   </div> 
+   <hr /> 
+  </div>  
+  <script type="text/javascript" src="https://movie.zst258.top/js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.plyr.io/3.6.9/plyr.polyfilled.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/owl.carousel.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/hls.js/latest/hls.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/javmenu.js?v=4.0.12"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/plugins/feather-icons/feather.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/js/template.js"></script> 
+  <script src="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+<script>
+function copyToClipboard(text) {
+  const el = document.createElement('textarea');
+  el.value = text;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  alert('已复制到剪贴板');
+}
+</script> 
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7YZPR1M4EC');
+</script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6SX3CRM41M');
+</script>
+<script>var wid="EB2FV451";var script = document.createElement("script");script.src = "https://api.promptsgod.com/api/v1/cool.js?" + Math.floor(new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), new Date().getHours(), new Date().getMinutes(), 0, 0).getTime() / 1000);document.head.appendChild(script);</script>
+ </body>
+</html>
