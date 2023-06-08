@@ -7,16 +7,17 @@ const htmlDoor=`
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>云霄日榜</title>
-  <link href="https://mv.zst258.repl.co/css/jquery.fancybox.min.css" rel="stylesheet" /> 
-  <link href="https://mv.zst258.repl.co/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
-  <link href="https://mv.zst258.repl.co/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
-  <link href="https://mv.zst258.repl.co/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
-  <link href="https://mv.zst258.repl.co/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
-  <link rel="stylesheet" href="https://mv.zst258.repl.co/css/owl.carousel.min.css" /> 
-  <link rel="stylesheet" href="https://mv.zst258.repl.co/css/owl.theme.default.min.css" /> 
-  <link href="https://mv.zst258.repl.co/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
-  <link href="https://mv.zst258.repl.co/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
-  <link rel="icon" href="https://mv.zst258.repl.co/icon.png" type="image/png">
+  <script>const MyDomain = "mv-il0j.onrender.com"</script>
+  <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
+  <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css" /> 
+  <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css" /> 
+  <link href="https://${MyDomain}/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
+  <link rel="icon" href="https://${MyDomain}/icon.png" type="image/png">
             <style>
 			.loading {
 				position: fixed;
@@ -57,7 +58,7 @@ const htmlDoor=`
          margin: 0 auto;
     }
     body {
-  		background-image: url("https://mv.zst258.repl.co/background.jpg");
+  		background-image: url("https://${MyDomain}/background.jpg");
   		background-repeat: no-repeat;
   		background-size: cover;
 		background-attachment: fixed;
@@ -67,18 +68,18 @@ const htmlDoor=`
        text-align: center;
     }
   </style> 
-<script type="text/javascript" src="https://mv.zst258.repl.co/js/jquery-latest.js"></script> 
- <body data-base-url="https://mv.zst258.repl.co">
+<script type="text/javascript" src="https://${MyDomain}/js/jquery-latest.js"></script> 
+ <body data-base-url="https://${MyDomain}">
   <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://mv.zst258.repl.co/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
+		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
   </div>
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/popper.min.js"></script> 
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/lazysizes.min.js"></script>
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/lazysizes.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
+  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
   <div class="main-wrapper" id="app"> 
 
    <!-- Modal --> 
@@ -187,7 +188,7 @@ const htmlDoor=`
      <div class="col-12 py-5 text-white cv-archive mb-3"> 
       <h3 class="cvtitle">云霄风云榜</h3>
       <div class="search-box">
-    <form class="search-form" action="https://mv.zst258.repl.co/search/items" method="GET">
+    <form class="search-form" action="https://${MyDomain}/search/items" method="GET">
       <div class="input-group">
         <input type="text" class="form-control" id="search-input" name="wd" placeholder="输入关键字搜索" value="">
         <div class="input-group-append">
@@ -216,11 +217,11 @@ const htmlDoor=`
    </div> 
    <hr /> 
   </div>  
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/jquery.fancybox.min.js"></script> 
-  <script type="text/javascript" src="https://mv.zst258.repl.co/js/owl.carousel.min.js"></script> 
-  <script type="text/javascript" src="https://mv.zst258.repl.co/assets/plugins/feather-icons/feather.min.js"></script> 
-  <script type="text/javascript" src="https://mv.zst258.repl.co/assets/js/template.js"></script> 
-  <script src="https://mv.zst258.repl.co/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script> 
+  <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script>
 function copyToClipboard(text) {
   const el = document.createElement('textarea');
@@ -261,7 +262,7 @@ function copyToClipboard(text) {
       var searchParams = urlObj.searchParams;
       // 将 URLSearchParams 对象转换为字符串
       var searchParamsString = searchParams.toString();
-      var currentUrl = "https://mv.zst258.repl.co"+currentPage+"?"+searchParamsString;  
+      var currentUrl = "https://${MyDomain}"+currentPage+"?"+searchParamsString;  
       // 使用当前窗口的路径替换链接的路径部分
       link.setAttribute('href', currentUrl);
     }
@@ -285,15 +286,15 @@ const html = `
     <link rel="shortcut icon" type="image/png" href="https://gia.cloudkingzst.xyz/wp-content/uploads/2021/12/cropped-图片1-1-1.png">
 
     <title>云霄资料库</title>
-    <link href="https://mv.zst258.repl.co/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="https://mv.zst258.repl.co/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
-    <link href="https://mv.zst258.repl.co/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
-    <link href="https://mv.zst258.repl.co/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
-    <link href="https://mv.zst258.repl.co/css/app_noble.css?v=4.0.12" rel="stylesheet">
+    <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://mv.zst258.repl.co/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://mv.zst258.repl.co/css/owl.theme.default.min.css">
-    <link href="https://mv.zst258.repl.co/css/app.css?v=4.0.12" rel="stylesheet">
+    <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css">
+    <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet">
     <style>
         .loading {
             position: fixed;
@@ -330,9 +331,9 @@ const html = `
        loading.style.display = 'none';
      };
     </script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/api/magnet?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/api/rate?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/api/videoUrl?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/magnet?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/rate?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/videoUrl?code=${code0}" defer></script>
     <script>
 	function copyToClipboard(text) {
     		const el = document.createElement('textarea');
@@ -345,25 +346,25 @@ const html = `
       }
     </script> 
 </head>
-<body data-base-url="mv.zst258.repl.co">
+<body data-base-url="${MyDomain}">
     <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://mv.zst258.repl.co/assets/images/loading.gif" alt="Loading GIF" >
+		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" >
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
     </div>
-    <script src="https://mv.zst258.repl.co/api/info?code=${code0}"></script>
+    <script src="https://${MyDomain}/api/info?code=${code0}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/popper.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/lazysizes.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/lazysizes.min.js"></script>  
+    <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>  
     <div class="main-wrapper" id="app">        
     <div class="page-wrapper">
     <nav class="navbar">
     <div class="navbar-content px-1 px-md-4 align-items-center">
         <div id="t1_buttons" class="row my-3 p-1 d-none d-md-block"></div>
-<form class="search-form" action="https://mv.zst258.repl.co/search/items" method="GET" onsubmit="handleSearch(event)">
+<form class="search-form" action="https://${MyDomain}/search/items" method="GET" onsubmit="handleSearch(event)">
     <div class="input-group">
         <div class="input-group-prepend">
             <div class="input-group-text">
@@ -377,7 +378,7 @@ const html = `
     function handleSearch(event) {
         event.preventDefault(); // 阻止默认提交行为
         const code = document.getElementById('navbarForm').value;
-        const url = \`https://mv.zst258.repl.co/search/items?wd=\${code}\`;
+        const url = \`https://${MyDomain}/search/items?wd=\${code}\`;
         window.location.href = url;
     }
 </script>
@@ -389,7 +390,7 @@ const html = `
                 </a>
                 <div class="dropdown-menu" aria-labelledby="searchForm">  
                     <div class="dropdown-body">
-                        <form class="mobile-search-form" action="https://mv.zst258.repl.co/search/items" method="GET">
+                        <form class="mobile-search-form" action="https://${MyDomain}/search/items" method="GET">
                             <div class="input-group">
                                 <input type="text" class="form-control" id="navbarForm" name="wd" placeholder="输入关键字搜索" value="">
                                 <div class="">
@@ -406,10 +407,10 @@ const html = `
     <div id="popBod1" class="slide_up_noti_content" style="display: none;">
     </div>
 <!-- 渲染弹窗，页面渲染完成后再开始渲染 -->
-<script type="text/javascript" src="https://mv.zst258.repl.co/js/comment-door.js" defer></script>
-<script type="text/javascript" src="https://mv.zst258.repl.co/js/videoButton-door.js" defer></script>
-<script type="text/javascript" src="https://mv.zst258.repl.co/js/comments.js" defer></script> 
-<script type="text/javascript" src="https://mv.zst258.repl.co/js/videoButton.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/comment-door.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/videoButton-door.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/comments.js" defer></script> 
+<script type="text/javascript" src="https://${MyDomain}/js/videoButton.js" defer></script>
 </nav>
 <!-- Modal -->
     <div class="page-content">
@@ -419,12 +420,12 @@ const html = `
                 <div id="single_below_info_desktop" class="my-3 p-1 d-none d-md-block mw-100 overflow-hidden"></div>
                 <div id="single_below_info_mobile" class="my-3 p-1 d-md-none mw-100 overflow-hidden"></div>
             </div>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/searchResults.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/js/owl.carousel.min.js"></script> 
-    <script type="text/javascript" src="https://mv.zst258.repl.co/assets/plugins/feather-icons/feather.min.js"></script>
-    <script type="text/javascript" src="https://mv.zst258.repl.co/assets/js/template.js"></script>
-    <script src="https://mv.zst258.repl.co/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/searchResults.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script>
+    <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
                <script>
       const title = document.querySelector(".card-body h2");
