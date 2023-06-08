@@ -1,4 +1,4 @@
-const MyDomain = process.env.MyDomain || "mv-il0j.onrender.com";
+const MyDomain = process.env.MyDomain;
 const htmlDoor=`
 <!DOCTYPE html>
 <html lang="zh">
