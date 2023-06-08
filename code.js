@@ -3,6 +3,7 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const url = require('url'); 
 const path = require('path');
+const MyDomain = "mv-il0j.onrender.com";
 const app = express()
 const { htmlDoor, CreateHtml} = require('./htmlDoor');
 const headers = {
@@ -339,13 +340,13 @@ $items.each((i, el) => {
   }
 
   const aHref = $el.find('a').attr('href');
-  const newHref = `https://mv.zst258.repl.co/api/view?code=${title}`;
+  const newHref = `https://${MyDomain}/api/view?code=${title}`;
   $el.find('a').attr('href', newHref);
 
   const img = $el.find('img.card-img-top.embed-responsive-item.lazyload');
   const src = img.attr('src');
   const datasrc = img.attr('data-src');
-  const newSrc = src.replace('https://javmenu.com/assets/images/', 'https://mv.zst258.repl.co/assets/images/');
+  const newSrc = src.replace('https://javmenu.com/assets/images/', 'https://${MyDomain}/assets/images/');
   const newdataSrc = datasrc.replace('https://pics.vpdmm.cc', 'https://pics.dmm.co.jp');
   img.attr('src', newSrc).attr('data-src',newdataSrc).removeAttr('onerror').attr('alt', title);
 });
