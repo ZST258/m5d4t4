@@ -1,3 +1,4 @@
+const MyDomain = "mv-il0j.onrender.com";
 const htmlDoor=`
 <!DOCTYPE html>
 <html lang="zh">
@@ -7,7 +8,6 @@ const htmlDoor=`
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>云霄日榜</title>
-  <script>const MyDomain = "mv-il0j.onrender.com"</script>
   <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet" /> 
   <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
   <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
