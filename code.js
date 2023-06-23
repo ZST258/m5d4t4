@@ -324,7 +324,6 @@ const handleInfos = async (req, res) => {
     const response = await axios.get(pageUrl, { headers });
     const $ = cheerio.load(response.data);
     const $elements = $('div.card-deck.row > div.category-page.video-list-item.col-xl-3.col-sm-6.col-6.mb-2.px-0.px-md-1');
-    const $page = $('.pagination.pagination-sm.justify-content-center');
     const searchItems = $('div.card-deck.row > div.category-page.video-list-item.col-xl-3.col-sm-6.col-12.mb-2');
     const actress = $('h2.text-center.font-weight-bold.my-4 > span.text.color-light-yellow').text().trim();
     //修改块中的元素
@@ -359,12 +358,6 @@ $items.each((i, el) => {
     // 选择要插入 HTML 块的元素
     const targetElement = $1('#results');
     targetElement.html(html);
-     // 找到目标插入位置的父级元素
-	const parentElement = $1('.page-content');
-	// 找到目标插入位置的参考元素
-	const referenceElement = parentElement.find('.col-12');
-	// 插入新的内容
-	$1(referenceElement).after($page);
     //需要分别处理的代码块
     if(infos == 'genre'){
     	$title.replaceWith('<h3 class="cvtitle">主题为<span class="text color-light-green">' + actress + '</span>的影片</h3>');
