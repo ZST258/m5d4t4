@@ -362,7 +362,7 @@ $items.each((i, el) => {
      // 找到目标插入位置的父级元素
 	const parentElement = $1('.col-12');
 	// 找到目标插入位置的参考元素
-	const referenceElement = parentElement.find('#results');
+	const referenceElement = parentElement.find('.page-content');
 	// 插入新的内容
 	$1(referenceElement).after($page);
     //需要分别处理的代码块
