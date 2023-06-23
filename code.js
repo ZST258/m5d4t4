@@ -360,9 +360,9 @@ $items.each((i, el) => {
     const targetElement = $1('#results');
     targetElement.html(html);
      // 找到目标插入位置的父级元素
-	const parentElement = $1('.col-12');
+	const parentElement = $1('.page-content');
 	// 找到目标插入位置的参考元素
-	const referenceElement = parentElement.find('.page-content');
+	const referenceElement = parentElement.find('.col-12');
 	// 插入新的内容
 	$1(referenceElement).after($page);
     //需要分别处理的代码块
