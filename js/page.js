@@ -29,7 +29,7 @@
   }
 
     if(prevPage===1){
-	prevPageURL=`${window.location.pathname}?${urlParams.toString().replace(`&page=${currentPage}`, '')}`;
+	prevPageURL=`${window.location.pathname}?${urlParams.toString().replace(`page=${currentPage}`, '')}`;
     }
     // 为按钮添加点击事件，实现页面跳转
     prevButton.addEventListener("click", function () {
