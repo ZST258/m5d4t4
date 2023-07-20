@@ -13,8 +13,8 @@ const htmlDoor=`
   <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
   <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
   <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
-  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css" /> 
-  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css" /> 
+  <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css" /> 
+  <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css" /> 
   <link href="https://${MyDomain}/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
   <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
   <link rel="icon" href="https://${MyDomain}/icon.png" type="image/png">
@@ -58,7 +58,7 @@ const htmlDoor=`
          margin: 0 auto;
     }
     body {
-  		background-image: url("https://movie.zst258.top/rank/day/background.jpg");
+  		background-image: url("https://${MyDomain}/background.jpg");
   		background-repeat: no-repeat;
   		background-size: cover;
 		background-attachment: fixed;
@@ -68,7 +68,7 @@ const htmlDoor=`
        text-align: center;
     }
   </style> 
-<script type="text/javascript" src="https://movie.zst258.top/js/jquery-latest.js"></script> 
+<script type="text/javascript" src="https://${MyDomain}/js/jquery-latest.js"></script> 
  <body data-base-url="${MyDomain}">
   <div class="loading">
 	<div class="loading-wrapper">
@@ -202,7 +202,7 @@ const htmlDoor=`
     <button id="prev-page-button" class="btn btn-outline-secondary mr-2">上一页</button>
     <button id="next-page-button" class="btn btn-outline-secondary ml-2">下一页</button>
   </div>
-  <script src="https://movie.zst258.top/js/page.js"></script>
+  <script src="https://${MyDomain}/js/page.js"></script>
      </div> 
     </div> 
     <div class="col-12"> 
