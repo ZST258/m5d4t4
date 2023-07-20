@@ -349,8 +349,6 @@ const html = `
     </div>
     <script src="https://${MyDomain}/api/info?code=${code0}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
     <div class="main-wrapper" id="app">        
     <div class="page-wrapper">
