@@ -76,9 +76,6 @@ const htmlDoor=`
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
   </div>
-  <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
   <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
   <div class="main-wrapper" id="app"> 
 
