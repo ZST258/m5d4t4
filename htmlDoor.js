@@ -278,15 +278,15 @@ const html = `
     <link rel="shortcut icon" type="image/png" href="https://gia.cloudkingzst.xyz/wp-content/uploads/2021/12/cropped-图片1-1-1.png">
 
     <title>云霄资料库</title>
-    <link href="https://movie.zst258.top/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="https://movie.zst258.top/rank/day/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
-    <link href="https://movie.zst258.top/rank/day/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
-    <link href="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
-    <link href="https://movie.zst258.top/css/app_noble.css?v=4.0.12" rel="stylesheet">
+    <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css">
-    <link href="https://movie.zst258.top/css/app.css?v=4.0.12" rel="stylesheet">
+    <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css">
+    <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
     <style>
         .loading {
@@ -324,10 +324,10 @@ const html = `
        loading.style.display = 'none';
      };
     </script>
-    <script type="text/javascript" src="https://movie.zst258.top/api/magnet?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://movie.zst258.top/api/rate?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://movie.zst258.top/api/videoUrl?code=${code0}" defer></script>
-    <script src="https://movie.zst258.top/api/directUrl?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/magnet?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/rate?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/videoUrl?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://${MyDomain}/api/directUrl?code=${code0}" defer></script>
     <script>
 	function copyToClipboard(text) {
     		const el = document.createElement('textarea');
@@ -343,16 +343,15 @@ const html = `
 <body data-base-url="${MyDomain}">
     <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" >
+		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" >
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
     </div>
-    <script src="https://movie.zst258.top/api/info?code=${code0}"></script>
+    <script src="https://${MyDomain}/api/info?code=${code0}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/popper.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>  
+    <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
     <div class="main-wrapper" id="app">        
     <div class="page-wrapper">
     <div id="popBod0" class="slide_up_noti_content" style="display: none;">
@@ -360,10 +359,10 @@ const html = `
     <div id="popBod1" class="slide_up_noti_content" style="display: none;">
     </div>
 <!-- 渲染弹窗，页面渲染完成后再开始渲染 -->
-<script type="text/javascript" src="https://movie.zst258.top/js/comment-door.js" defer></script>
-<script type="text/javascript" src="https://movie.zst258.top/js/videoButton-door.js" defer></script>
-<script type="text/javascript" src="https://movie.zst258.top/js/comments.js" defer></script> 
-<script type="text/javascript" src="https://movie.zst258.top/js/videoButton.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/comment-door.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/videoButton-door.js" defer></script>
+<script type="text/javascript" src="https://${MyDomain}/js/comments.js" defer></script> 
+<script type="text/javascript" src="https://${MyDomain}/js/videoButton.js" defer></script>
 
 <!-- Modal -->
     <div class="page-content">   
@@ -383,12 +382,12 @@ const html = `
         }
       });
     </script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/searchResults.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/js/owl.carousel.min.js"></script> 
-    <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/plugins/feather-icons/feather.min.js"></script>
-    <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/js/template.js"></script>
-    <script src="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>                    
+    <script type="text/javascript" src="https://${MyDomain}/js/searchResults.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script>
+    <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script>
+    <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>                    
 </body>
 </html>
 `;
