@@ -334,7 +334,7 @@ $items.each((i, el) => {
   const img = $el.find('img.card-img-top.embed-responsive-item.lazyload');
   const src = img.attr('src');
   const datasrc = img.attr('data-src');
-  const newSrc = src.replace('https://javmenu.com/assets/images/', 'https://${MyDomain}/assets/images/');
+  const newSrc = src.replace('https://javmenu.com/assets/images/', `https://${MyDomain}/assets/images/`);
   const newdataSrc = datasrc.replace('https://pics.vpdmm.cc', 'https://pics.dmm.co.jp');
   img.attr('src', newSrc).attr('data-src',newdataSrc).removeAttr('onerror').attr('alt', title);
 });
