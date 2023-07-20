@@ -8,16 +8,16 @@ const htmlDoor=`
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>云霄日榜</title>
-  <link href="https://movie.zst258.top/css/jquery.fancybox.min.css" rel="stylesheet" /> 
-  <link href="https://movie.zst258.top/rank/day/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
-  <link href="https://movie.zst258.top/rank/day/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
-  <link href="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
-  <link href="https://movie.zst258.top/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
   <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css" /> 
   <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css" /> 
-  <link href="https://movie.zst258.top/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
-  <link href="https://movie.zst258.top/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
-  <link rel="icon" href="https://movie.zst258.top/rank/day/icon.png" type="image/png">
+  <link href="https://${MyDomain}/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
+  <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
+  <link rel="icon" href="https://${MyDomain}/icon.png" type="image/png">
             <style>
 			.loading {
 				position: fixed;
@@ -72,14 +72,14 @@ const htmlDoor=`
  <body data-base-url="${MyDomain}">
   <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
+		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
   </div>
-  <script type="text/javascript" src="https://movie.zst258.top/js/popper.min.js"></script> 
-  <script type="text/javascript" src="https://movie.zst258.top/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>
-  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
+  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
   <div class="main-wrapper" id="app"> 
 
    <!-- Modal --> 
@@ -188,7 +188,7 @@ const htmlDoor=`
      <div class="col-12 py-5 text-white cv-archive mb-3"> 
       <h3 class="cvtitle">云霄风云榜</h3>
       <div class="search-box">
-    <form class="search-form" action="https://movie.zst258.top/search/items" method="GET">
+    <form class="search-form" action="https://${MyDomain}/search/items" method="GET">
       <div class="input-group">
         <input type="text" class="form-control" id="search-input" name="wd" placeholder="输入关键字搜索" value="">
         <div class="input-group-append">
@@ -223,11 +223,11 @@ const htmlDoor=`
    </div> 
    <hr /> 
   </div>  
-  <script type="text/javascript" src="https://movie.zst258.top/js/jquery.fancybox.min.js"></script> 
-  <script type="text/javascript" src="https://movie.zst258.top/js/owl.carousel.min.js"></script> 
-  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/plugins/feather-icons/feather.min.js"></script> 
-  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/js/template.js"></script> 
-  <script src="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script> 
+  <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script> 
+  <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script>
 function copyToClipboard(text) {
   const el = document.createElement('textarea');
@@ -254,7 +254,7 @@ function copyToClipboard(text) {
       var searchParams = urlObj.searchParams;
       // 将 URLSearchParams 对象转换为字符串
       var searchParamsString = searchParams.toString();
-      var currentUrl = "https://movie.zst258.top"+currentPage+"?"+searchParamsString;  
+      var currentUrl = "https://${MyDomain}"+currentPage+"?"+searchParamsString;  
       // 使用当前窗口的路径替换链接的路径部分
       link.setAttribute('href', currentUrl);
     }
