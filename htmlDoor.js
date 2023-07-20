@@ -69,7 +69,7 @@ const htmlDoor=`
     }
   </style> 
 <script type="text/javascript" src="https://movie.zst258.top/js/jquery-latest.js"></script> 
- <body data-base-url=${MyDomain}>
+ <body data-base-url="${MyDomain}">
   <div class="loading">
 	<div class="loading-wrapper">
 		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
@@ -340,7 +340,7 @@ const html = `
       }
     </script> 
 </head>
-<body data-base-url=${MyDomain}>
+<body data-base-url="${MyDomain}">
     <div class="loading">
 	<div class="loading-wrapper">
 		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" >
