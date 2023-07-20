@@ -239,20 +239,6 @@ function copyToClipboard(text) {
 }
 </script>
 <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-7YZPR1M4EC');
-</script>
-<script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-6SX3CRM41M');
-</script>
-<script>
   document.addEventListener('DOMContentLoaded', function() {
     var currentPage = window.location.pathname; // 获取当前窗口的路径
 
