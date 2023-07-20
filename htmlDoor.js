@@ -1,4 +1,3 @@
-const MyDomain = process.env.MyDomain;
 const htmlDoor=`
 <!DOCTYPE html>
 <html lang="zh">
@@ -8,16 +7,16 @@ const htmlDoor=`
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
   <title>云霄日榜</title>
-  <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet" /> 
-  <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
-  <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
-  <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
-  <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
-  <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css" /> 
-  <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css" /> 
-  <link href="https://${MyDomain}/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
-  <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
-  <link rel="icon" href="https://${MyDomain}/icon.png" type="image/png">
+  <link href="https://movie.zst258.top/css/jquery.fancybox.min.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/css/app_noble.css?v=4.0.12" rel="stylesheet" /> 
+  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css" /> 
+  <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css" /> 
+  <link href="https://movie.zst258.top/css/plyr.css?v=4.0.12" rel="stylesheet" /> 
+  <link href="https://movie.zst258.top/css/app.css?v=4.0.12" rel="stylesheet" type="text/css" />  
+  <link rel="icon" href="https://movie.zst258.top/rank/day/icon.png" type="image/png">
             <style>
 			.loading {
 				position: fixed;
@@ -58,7 +57,7 @@ const htmlDoor=`
          margin: 0 auto;
     }
     body {
-  		background-image: url("https://${MyDomain}/background.jpg");
+  		background-image: url("https://movie.zst258.top/rank/day/background.jpg");
   		background-repeat: no-repeat;
   		background-size: cover;
 		background-attachment: fixed;
@@ -68,18 +67,18 @@ const htmlDoor=`
        text-align: center;
     }
   </style> 
-<script type="text/javascript" src="https://${MyDomain}/js/jquery-latest.js"></script> 
- <body data-base-url="https://${MyDomain}">
+<script type="text/javascript" src="https://movie.zst258.top/js/jquery-latest.js"></script> 
+ <body data-base-url="https://movie.zst258.top">
   <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
+		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" width="400" height="300">
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
   </div>
-  <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
-  <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/popper.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>
+  <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script> 
   <div class="main-wrapper" id="app"> 
 
    <!-- Modal --> 
@@ -188,7 +187,7 @@ const htmlDoor=`
      <div class="col-12 py-5 text-white cv-archive mb-3"> 
       <h3 class="cvtitle">云霄风云榜</h3>
       <div class="search-box">
-    <form class="search-form" action="https://${MyDomain}/search/items" method="GET">
+    <form class="search-form" action="https://movie.zst258.top/search/items" method="GET">
       <div class="input-group">
         <input type="text" class="form-control" id="search-input" name="wd" placeholder="输入关键字搜索" value="">
         <div class="input-group-append">
@@ -197,6 +196,12 @@ const htmlDoor=`
       </div>
     </form>
    </div> 
+  <!-- 在你的HTML文件中添加一个ID为"pagination-container"的div用于放置上一页和下一页按钮 -->
+  <div id="pagination-container" class="pagination-buttons mt-3 text-center">
+    <button id="prev-page-button" class="btn btn-outline-secondary mr-2">上一页</button>
+    <button id="next-page-button" class="btn btn-outline-secondary ml-2">下一页</button>
+  </div>
+  <script src="https://movie.zst258.top/js/page.js"></script>
      </div> 
     </div> 
     <div class="col-12"> 
@@ -217,11 +222,11 @@ const htmlDoor=`
    </div> 
    <hr /> 
   </div>  
-  <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script> 
-  <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script> 
-  <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/jquery.fancybox.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/js/owl.carousel.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/plugins/feather-icons/feather.min.js"></script> 
+  <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/js/template.js"></script> 
+  <script src="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script> 
 <script>
 function copyToClipboard(text) {
   const el = document.createElement('textarea');
@@ -262,7 +267,7 @@ function copyToClipboard(text) {
       var searchParams = urlObj.searchParams;
       // 将 URLSearchParams 对象转换为字符串
       var searchParamsString = searchParams.toString();
-      var currentUrl = "https://${MyDomain}"+currentPage+"?"+searchParamsString;  
+      var currentUrl = "https://movie.zst258.top"+currentPage+"?"+searchParamsString;  
       // 使用当前窗口的路径替换链接的路径部分
       link.setAttribute('href', currentUrl);
     }
@@ -286,15 +291,16 @@ const html = `
     <link rel="shortcut icon" type="image/png" href="https://gia.cloudkingzst.xyz/wp-content/uploads/2021/12/cropped-图片1-1-1.png">
 
     <title>云霄资料库</title>
-    <link href="https://${MyDomain}/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="https://${MyDomain}/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
-    <link href="https://${MyDomain}/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
-    <link href="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
-    <link href="https://${MyDomain}/css/app_noble.css?v=4.0.12" rel="stylesheet">
+    <link href="https://movie.zst258.top/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://movie.zst258.top/rank/day/assets/fonts/feather-font/css/iconfont.css" rel="stylesheet" />
+    <link href="https://movie.zst258.top/rank/day/assets/plugins/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+    <link href="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="https://movie.zst258.top/css/app_noble.css?v=4.0.12" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://${MyDomain}/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://${MyDomain}/css/owl.theme.default.min.css">
-    <link href="https://${MyDomain}/css/app.css?v=4.0.12" rel="stylesheet">
+    <link rel="stylesheet" href="https://movie.zst258.top/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://movie.zst258.top/css/owl.theme.default.min.css">
+    <link href="https://movie.zst258.top/css/app.css?v=4.0.12" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.3/plyr.css">
     <style>
         .loading {
             position: fixed;
@@ -331,9 +337,10 @@ const html = `
        loading.style.display = 'none';
      };
     </script>
-    <script type="text/javascript" src="https://${MyDomain}/api/magnet?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://${MyDomain}/api/rate?code=${code0}" defer></script>
-    <script type="text/javascript" src="https://${MyDomain}/api/videoUrl?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://movie.zst258.top/api/magnet?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://movie.zst258.top/api/rate?code=${code0}" defer></script>
+    <script type="text/javascript" src="https://movie.zst258.top/api/videoUrl?code=${code0}" defer></script>
+    <script src="https://movie.zst258.top/api/directUrl?code=${code0}" defer></script>
     <script>
 	function copyToClipboard(text) {
     		const el = document.createElement('textarea');
@@ -346,114 +353,55 @@ const html = `
       }
     </script> 
 </head>
-<body data-base-url="${MyDomain}">
+<body data-base-url="movie.zst258.top">
     <div class="loading">
 	<div class="loading-wrapper">
-		<img src="https://${MyDomain}/assets/images/loading.gif" alt="Loading GIF" >
+		<img src="https://movie.zst258.top/rank/day/assets/images/loading.gif" alt="Loading GIF" >
 		<h4 class="loading-text">正在检索中，请稍后</h4>
 	</div>
     </div>
-    <script src="https://${MyDomain}/api/info?code=${code0}"></script>
+    <script src="https://movie.zst258.top/api/info?code=${code0}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/popper.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/lazysizes.min.js"></script>  
+    <script type="text/javascript" src="https://movie.zst258.top/js/popper.min.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/lazysizes.min.js"></script>  
     <div class="main-wrapper" id="app">        
     <div class="page-wrapper">
-    <nav class="navbar">
-    <div class="navbar-content px-1 px-md-4 align-items-center">
-        <div id="t1_buttons" class="row my-3 p-1 d-none d-md-block"></div>
-<form class="search-form" action="https://${MyDomain}/search/items" method="GET" onsubmit="handleSearch(event)">
-    <div class="input-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <i data-feather="search"></i>
-            </div>
-        </div>
-        <input type="text" class="form-control" id="navbarForm" name="wd" placeholder="输入关键字搜索" value="">
-    </div>
-</form>
-<script>
-    function handleSearch(event) {
-        event.preventDefault(); // 阻止默认提交行为
-        const code = document.getElementById('navbarForm').value;
-        const url = \`https://${MyDomain}/search/items?wd=\${code}\`;
-        window.location.href = url;
-    }
-</script>
-        <ul class="navbar-nav">
-            <li class="nav-item dropdown nav-apps d-flex d-md-none">
-                <a class="nav-link dropdown-toggle" href="#" id="searchForm" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <i data-feather="search"></i>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="searchForm">  
-                    <div class="dropdown-body">
-                        <form class="mobile-search-form" action="https://${MyDomain}/search/items" method="GET">
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="navbarForm" name="wd" placeholder="输入关键字搜索" value="">
-                                <div class="">
-                                    <button class='p-1  rounded btn btn-primary' type="submit"><i data-feather="search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </li>           
-        </ul>
     <div id="popBod0" class="slide_up_noti_content" style="display: none;">
     </div>
     <div id="popBod1" class="slide_up_noti_content" style="display: none;">
     </div>
 <!-- 渲染弹窗，页面渲染完成后再开始渲染 -->
-<script type="text/javascript" src="https://${MyDomain}/js/comment-door.js" defer></script>
-<script type="text/javascript" src="https://${MyDomain}/js/videoButton-door.js" defer></script>
-<script type="text/javascript" src="https://${MyDomain}/js/comments.js" defer></script> 
-<script type="text/javascript" src="https://${MyDomain}/js/videoButton.js" defer></script>
-</nav>
+<script type="text/javascript" src="https://movie.zst258.top/js/comment-door.js" defer></script>
+<script type="text/javascript" src="https://movie.zst258.top/js/videoButton-door.js" defer></script>
+<script type="text/javascript" src="https://movie.zst258.top/js/comments.js" defer></script> 
+<script type="text/javascript" src="https://movie.zst258.top/js/videoButton.js" defer></script>
+
 <!-- Modal -->
-    <div class="page-content">
-    <div class="container-fluid p-0">
-    <div class="row mb-4" id="results">       
-            <div class="col-12 mb-3">
-                <div id="single_below_info_desktop" class="my-3 p-1 d-none d-md-block mw-100 overflow-hidden"></div>
-                <div id="single_below_info_mobile" class="my-3 p-1 d-md-none mw-100 overflow-hidden"></div>
-            </div>
-    <script type="text/javascript" src="https://${MyDomain}/js/searchResults.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/jquery.fancybox.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/js/owl.carousel.min.js"></script> 
-    <script type="text/javascript" src="https://${MyDomain}/assets/plugins/feather-icons/feather.min.js"></script>
-    <script type="text/javascript" src="https://${MyDomain}/assets/js/template.js"></script>
-    <script src="https://${MyDomain}/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-               <script>
-      const title = document.querySelector(".card-body h2");
-      const container = title.parentNode;
-      const padding = getComputedStyle(container).paddingLeft;
-      const maxWidth = container.clientWidth - 2 * parseFloat(padding);
-      let fontSize = parseFloat(getComputedStyle(title).fontSize);
-      const currentWidth = title.scrollWidth;
-
-      if (currentWidth > maxWidth) {
-        fontSize = fontSize * maxWidth / currentWidth;
-        title.style.fontSize = fontSize / 16 + "rem";
-      }
-
-      function resizeTitle() {
-        const newContainer = title.parentNode;
-        const newPadding = getComputedStyle(newContainer).paddingLeft;
-        const newMaxWidth =
-          newContainer.clientWidth - 2 * parseFloat(newPadding);
-        const newFontSize = fontSize * (newMaxWidth / maxWidth);
-        if (newMaxWidth / maxWidth <= 1) {
-           title.style.fontSize = newFontSize / 16 + "rem";
+    <div class="page-content">   
+    <div class="container-fluid p-0"> 
+    <div class="row mb-4" id="results">
+    </div>
+    </div>
+    </div>       
+    <script src="https://cdn.plyr.io/3.6.3/plyr.js"></script>
+    <script>
+      const player = new Plyr('#myVideo', {
+        quality: {
+          default: '1080',
+          options: ['1080', '480', '360'],
+          forced: true,
+          fps: 'sync' // 帧率与视频本身帧率同步
         }
-      }
-
-      window.addEventListener("resize", resizeTitle);
-
-           </script>                     
+      });
+    </script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/searchResults.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/js/owl.carousel.min.js"></script> 
+    <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/plugins/feather-icons/feather.min.js"></script>
+    <script type="text/javascript" src="https://movie.zst258.top/rank/day/assets/js/template.js"></script>
+    <script src="https://movie.zst258.top/rank/day/assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>                    
 </body>
 </html>
 `;
