@@ -9,17 +9,6 @@ const { htmlDoor, CreateHtml} = require('./htmlDoor');
 const headers = {
    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.64',
 };
-const CatchJavascriptReq = (req, res, next) => {
-  const isScriptRequest = req.headers.accept.indexOf('text/javascript') !== -1;
-  if (isScriptRequest) {
-    const redisClient = createRedisClient();
-    req.redisClient = redisClient;
-    next();
-  } else {
-    next();
-  }
-};
-app.use(CatchJavascriptReq);
 app.get('/api/info', async (req, res) => {
   var code = req.query.code
   const url = `https://javmenu.com/zh/${code}`
